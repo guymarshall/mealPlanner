@@ -9,7 +9,7 @@ require_once 'MealPlan.php';
 // TODO: Save meal plan to "YYYY.MM.DD_meal_plan.txt" every Friday at 16:00
 // TODO: Email list
 
-function getRandom($meals): Meal
+function getRandom(array $meals): Meal
 {
     $max = count($meals) - 1;
     $randomIndex = rand(0, $max);
